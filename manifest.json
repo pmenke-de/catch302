@@ -1,0 +1,34 @@
+{
+
+  "manifest_version": 2,
+  "name": "Catch/302",
+  "version": "1.0",
+
+  "description": "Catches HTTP 302 (and any other) redirects and allows saving/restoring the original URL using a flexible rule-set.",
+
+  "icons": {
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "catch302@menke.network"
+    }
+  },
+
+  "permissions" : [
+    "webNavigation",
+    "webRequest",
+    "tabs",
+    "storage",
+    "<all_urls>"
+  ],
+
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
